@@ -1,0 +1,37 @@
+<c:FragmentDefinition 
+    xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:f="sap.f"
+    	xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core"
+	displayBlock="true"
+	height="100%">
+>
+    <f:Card class="sapUiMediumPadding" width="100%">
+        <f:header>
+            <card:Header title="Project Cloud Transformation" subtitle="Revenue per Product | EUR" />
+        </f:header>
+        <f:content>
+            <List
+                class="sapUiSmallMarginBottom"
+                showSeparators="None"
+                items="{
+                    path: 'ProductsStore>/products'
+                }">
+                <CustomListItem>
+                    <HBox alignItems="Center" justifyContent="SpaceBetween">
+                        <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                            <Title level="H3" text="{ProductsStore>ProductName}" />
+                            <Text text="{ProductsStore>UnitsInStock}" />
+                        </VBox>
+                        <VBox>
+                            <Text text="{ProductsStore>QuantityPerUnit}" />
+                            <Text text="{ProductsStore>UnitPrice}" />
+                        </VBox>
+                    </HBox>
+                </CustomListItem>
+            </List>
+        </f:content>
+    </f:Card>
+</c:FragmentDefinition 
+>

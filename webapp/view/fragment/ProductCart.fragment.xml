@@ -9,7 +9,7 @@
 >
     <f:Card class="sapUiMediumPadding" width="100%">
         <f:header>
-            <card:Header title="Project Cloud Transformation" subtitle="Revenue per Product | EUR" />
+            <card:Header title="Product Catalog list" subtitle="Product info / stock | units per pack / price" />
         </f:header>
         <f:content>
             <List
